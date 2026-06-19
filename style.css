@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#121212;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.player-container{
+    width:100%;
+    max-width:400px;
+    background:#181818;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+.album-art{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.5);
+    margin-bottom:20px;
+}
+
+#songTitle{
+    margin-bottom:5px;
+}
+
+#artistName{
+    color:#b3b3b3;
+    margin-bottom:20px;
+}
+
+.time-container{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:5px;
+    font-size:14px;
+}
+
+#progressBar{
+    width:100%;
+    cursor:pointer;
+    accent-color:#1DB954;
+}
+
+.controls{
+    margin:20px 0;
+}
+
+.controls button{
+    background:#1DB954;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    margin:0 8px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.controls button:hover{
+    transform:scale(1.1);
+}
+
+.volume-section{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.volume-section input{
+    flex:1;
+    accent-color:#1DB954;
+}
+
+.playlist{
+    text-align:left;
+}
+
+.playlist h3{
+    margin-bottom:10px;
+}
+
+.playlist ul{
+    list-style:none;
+}
+
+.playlist li{
+    padding:10px;
+    background:#242424;
+    margin-bottom:8px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.playlist li:hover{
+    background:#1DB954;
+}
+
+.active-song{
+    background:#1DB954 !important;
+}
+
+@media(max-width:500px){
+
+    .album-art{
+        width:100%;
+        height:auto;
+    }
+
+    .player-container{
+        max-width:100%;
+    }
+
+}
